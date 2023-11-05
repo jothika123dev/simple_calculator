@@ -21,8 +21,7 @@ To run this calculator on your local machine, follow these steps:
 ```bash
 git clone https://github.com/jothika123dev/simple-calculator.git
 
-##Usage
-
+Usage
 Click on the numeric buttons (0-9) to input numbers.
 Use the arithmetic buttons (+, -, *, /) to perform operations.
 Press the decimal point (.) for decimal numbers.
