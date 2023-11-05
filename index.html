@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Calculator</title>
+<link rel="stylesheet" href="css/style.css" >
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="calculator-box">
+    <h2>Simple Calculator</h2>
+    <table>
+    <tr>
+        <td colspan="3" class="numberbox answerbox" id="answerbox"></td>
+        <td colspan="1" class="numberbox clearbtn"><input type="button" class="calc-button acbtn" onclick="clearAnswer()" value="AC"></td>
+        </tr>
+        <tr>
+        <td class="numberbox "><input type="button" class="calc-button num" value="9" onclick="getnum(this.value);"></td>
+        <td class="numberbox "><input type="button" class="calc-button num" value="8" onclick="getnum(this.value);"></td>
+        <td class="numberbox "><input type="button" class="calc-button num" value="7" onclick="getnum(this.value);"></td>
+        <td class="numberbox"><input type="button" class="calc-button symbol" value="+" onclick="getnum(this.value);"></td>
+        </tr>
+        <tr>
+        <td class="numberbox "><input type="button" class="calc-button num" value="4" onclick="getnum(this.value);"></td>
+        <td class="numberbox "><input type="button" class="calc-button num" value="5" onclick="getnum(this.value);"></td>
+        <td class="numberbox "><input type="button" class="calc-button num" value="6" onclick="getnum(this.value);"></td>
+        <td class="numberbox"> <input type="button" class="calc-button symbol" value="&#8722;" onclick="getnum('-');"></td>
+        </tr>
+        <tr>
+        <td class="numberbox "><input type="button" class="calc-button num" value="1" onclick="getnum(this.value);"></td>
+        <td class="numberbox "><input type="button" class="calc-button num" value="2" onclick="getnum(this.value);"></td>
+        <td class="numberbox "><input type="button" class="calc-button num" value="3" onclick="getnum(this.value);"></td>
+        <td class="numberbox "><input type="button" class="calc-button symbol" value="&#xF7;" onclick="getnum('/');"></td>
+        </tr>
+        <tr>
+        <td class="numberbox "><input type="button" class="calc-button num" value="." onclick="getnum(this.value);"></td>
+        <td class="numberbox "><input type="button" class="calc-button num" value="0" onclick="getnum(this.value);"></td>
+        <td class="numberbox "><input type="button" class="calc-button num" value="=" onclick="calculateResult();"></td>
+        <td class="numberbox"><input type="button" class="calc-button symbol" value="&times;" onclick="getnum('*');"></td>
+        </tr>
+        </table>
+</div>
+</div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
